@@ -1,0 +1,3 @@
+---
+packer_zip : 'packer_{{packer_ver}}_{{packer_platform}}.zip'
+packer_url : '{{packer_mirror}}/{{packer_ver}}/{{packer_zip}}'

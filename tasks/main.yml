@@ -1,0 +1,21 @@
+---
+- name: downloading packer...
+  get_url: url='{{packer_url}}' dest='/tmp/{{packer_zip}}'
+
+- name: create target packer dir...
+  file: >-
+    owner=root
+    group=root
+    mode=755
+    path=/opt/packer-{{packer_ver}}
+    state=directory
+
+- name: unarchive...
+  unarchive: copy=no src='/tmp/{{packer_zip}}' dest='/opt/packer-{{packer_ver}}'
+
+- name: linking...
+  file: src='/opt/packer-{{packer_ver}}' dest='/opt/packer' state=link
+
+- name: include packer in the default path...
+  copy: src='etc/profile.d/packer.sh' dest='/etc/profile.d/packer.sh' mode=644
+  

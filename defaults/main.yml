@@ -1,0 +1,4 @@
+---
+packer_ver : '0.8.6'
+packer_mirror : 'https://releases.hashicorp.com/packer'
+packer_platform : 'linux_amd64'
