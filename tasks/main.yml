@@ -1,6 +1,11 @@
 ---
 - name: downloading packer...
-  get_url: url='{{packer_url}}' dest='/tmp/{{packer_zip}}'
+  get_url: >
+    url={{packer_url}}
+    dest=/tmp/{{packer_zip}}
+    owner=root
+    group=root
+    mode=0644
 
 - name: create target packer dir...
   file: >-
@@ -11,11 +16,23 @@
     state=directory
 
 - name: unarchive...
-  unarchive: copy=no src='/tmp/{{packer_zip}}' dest='/opt/packer-{{packer_ver}}'
+  unarchive: >
+    copy=no
+    src=/tmp/{{packer_zip}}
+    dest=/opt/packer-{{packer_ver}}
+    creates=/opt/packer-{{packer_ver}}/packer
 
 - name: linking...
-  file: src='/opt/packer-{{packer_ver}}' dest='/opt/packer' state=link
+  file: >
+    src=/opt/packer-{{packer_ver}}
+    dest=/opt/packer
+    state=link
 
 - name: include packer in the default path...
-  copy: src='etc/profile.d/packer.sh' dest='/etc/profile.d/packer.sh' mode=644
+  copy: >
+    src='etc/profile.d/packer.sh'
+    dest='/etc/profile.d/packer.sh'
+    owner=root
+    group=root
+    mode=644
   
