@@ -1,21 +1,23 @@
 ---
 - name: downloading packer...
+  become: yes
+  become_user: root
   get_url: >
     url={{packer_url}}
     dest=/tmp/{{packer_zip}}
-    owner=root
-    group=root
     mode=0644
 
 - name: create target packer dir...
+  become: yes
+  become_user: root
   file: >-
-    owner=root
-    group=root
-    mode=755
+    mode=0755
     path=/opt/packer-{{packer_ver}}
     state=directory
 
 - name: unarchive...
+  become: yes
+  become_user: root
   unarchive: >
     copy=no
     src=/tmp/{{packer_zip}}
@@ -23,16 +25,20 @@
     creates=/opt/packer-{{packer_ver}}/packer
 
 - name: linking...
+  become: yes
+  become_user: root
   file: >
     src=/opt/packer-{{packer_ver}}
     dest=/opt/packer
     state=link
 
 - name: include packer in the default path...
+  become: yes
+  become_user: root
+  with_items:
+    - etc/profile.d/packer.sh
   copy: >
-    src='etc/profile.d/packer.sh'
-    dest='/etc/profile.d/packer.sh'
-    owner=root
-    group=root
-    mode=644
+    src={{item}}
+    dest=/{{item}}
+    mode=0644
   
