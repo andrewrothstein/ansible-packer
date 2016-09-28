@@ -11,8 +11,8 @@
   become: yes
   become_user: root
   file: >-
+    path={{packer_install_parent_dir}}/{{packer_name}}
     mode=0755
-    path=/opt/packer-{{packer_ver}}
     state=directory
 
 - name: unarchive...
@@ -21,24 +21,13 @@
   unarchive: >
     copy=no
     src=/tmp/{{packer_zip}}
-    dest=/opt/packer-{{packer_ver}}
-    creates=/opt/packer-{{packer_ver}}/packer
+    dest={{packer_install_parent_dir}}/{{packer_name}}
+    creates={{packer_install_parent_dir}}/{{packer_name}}/packer
 
 - name: linking...
   become: yes
   become_user: root
   file: >
-    src=/opt/packer-{{packer_ver}}
-    dest=/opt/packer
+    src={{packer_install_parent_dir}}/{{packer_name}}/packer
+    dest={{packer_install_parent_dir}}/packer
     state=link
-
-- name: include packer in the default path...
-  become: yes
-  become_user: root
-  with_items:
-    - etc/profile.d/packer.sh
-  copy: >
-    src={{item}}
-    dest=/{{item}}
-    mode=0644
-  

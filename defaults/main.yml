@@ -1,4 +1,5 @@
 ---
-packer_ver : '0.10.1'
+packer_ver : '0.10.2'
 packer_mirror : 'https://releases.hashicorp.com/packer'
 packer_platform : 'linux_amd64'
+packer_install_parent_dir: /usr/local/bin
