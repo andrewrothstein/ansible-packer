@@ -1,5 +1,6 @@
 ---
 packer_ver : '0.12.0'
-packer_mirror : 'https://releases.hashicorp.com/packer'
-packer_platform : 'linux_amd64'
+packer_mirror : https://releases.hashicorp.com/packer
+packer_platform : linux_amd64
+packer_checksum: sha256:ce6362d527ba697e40b8c90a98d2034b7749e2357fa238b08536aed44f037073
 packer_install_parent_dir: /usr/local/bin

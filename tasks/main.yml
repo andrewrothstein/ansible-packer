@@ -5,6 +5,7 @@
   get_url: >
     url={{packer_url}}
     dest=/tmp/{{packer_zip}}
+    checksum={{packer_checksum}}
     mode=0644
 
 - name: create target packer dir...
