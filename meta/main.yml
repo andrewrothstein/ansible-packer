@@ -1,7 +1,7 @@
 ---
 galaxy_info:
   author: Andrew Rothstein
-  description: hashicorp packer role
+  description: installs HashiCorps packer
   company: BlackRock
   license:
     - MIT
@@ -24,5 +24,7 @@ galaxy_info:
     - cloud
     - packaging
 
-dependencies: []
+dependencies:
+  - role: andrewrothstein.unarchive-deps
+    version: v1.0.5
   
