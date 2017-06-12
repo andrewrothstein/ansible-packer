@@ -1,6 +1,6 @@
-[![CircleCI](https://circleci.com/gh/andrewrothstein/ansible-packer.svg?style=svg)](https://circleci.com/gh/andrewrothstein/ansible-packer)
-andrewrothstein.terraform
-===========================
+andrewrothstein.packer
+======================
+[![Build Status](https://travis-ci.org/andrewrothstein/ansible-packer.svg?branch=master)](https://travis-ci.org/andrewrothstein/ansible-packer)
 
 Installs [Packer](https://www.packer.io/)
 
