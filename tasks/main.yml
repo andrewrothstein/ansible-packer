@@ -2,33 +2,41 @@
 - name: downloading packer...
   become: yes
   become_user: root
-  get_url: >
-    url={{packer_url}}
-    dest=/tmp/{{packer_zip}}
-    checksum={{packer_checksum}}
-    mode=0644
+  get_url:
+    url: '{{packer_url}}'
+    dest: /tmp/{{packer_zip}}
+    checksum: '{{packer_checksum}}'
+    mode: 0644
 
 - name: create target packer dir...
   become: yes
   become_user: root
-  file: >-
-    path={{packer_install_parent_dir}}/{{packer_name}}
-    mode=0755
-    state=directory
+  file:
+    path: '{{packer_install_dir}}'
+    mode: 0755
+    state: directory
 
 - name: unarchive...
   become: yes
   become_user: root
-  unarchive: >
-    copy=no
-    src=/tmp/{{packer_zip}}
-    dest={{packer_install_parent_dir}}/{{packer_name}}
-    creates={{packer_install_parent_dir}}/{{packer_name}}/packer
+  unarchive:
+    copy: no
+    src: /tmp/{{packer_zip}}
+    dest: '{{packer_install_dir}}'
+    creates: '{{packer_install_dir}}/packer'
 
 - name: linking...
   become: yes
   become_user: root
-  file: >
-    src={{packer_install_parent_dir}}/{{packer_name}}/packer
-    dest={{packer_install_parent_dir}}/packer
-    state=link
+  file:
+    src: '{{packer_install_dir}}/packer'
+    dest: '{{packer_install_parent_dir}}/packer'
+    state: link
+
+- name: cleanup...
+  become: yes
+  become_user: root
+  when: packer_cleanup
+  file:
+    path: /tmp/{{packer_zip}}
+    state: absent
