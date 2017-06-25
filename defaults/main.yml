@@ -1,23 +1,23 @@
 ---
-packer_ver : '1.0.1'
+packer_ver : '1.0.2'
 packer_mirror : https://releases.hashicorp.com/packer
 packer_platform : linux_amd64
 packer_cleanup: False
 
-# https://releases.hashicorp.com/packer/1.0.1/packer_1.0.1_SHA256SUMS
+# https://releases.hashicorp.com/packer/1.0.2/packer_1.0.2_SHA256SUMS
 packer_checksums:
-  darwin_386: sha256:81e349748dd87457ed6fa333e8e8f29a5905125a70aaf707e4efe7fce6b3be17
-  darwin_amd64: sha256:ee631e85f1ed77f1b52ce9bdce75cf92f952ebffba600df32892e95a78cc5133
-  freebsd_386: sha256:b2c1479e6f97153ed94947c4ef5feea44ebfa26e1164b7f058ee8754d8fa1286
-  freebsd_amd64: sha256:e4056d823387e0d9189085b4730854981fbdef3c15bd8e7d12f5110c91940e8a
-  freebsd_arm: sha256:805e2ef6eb63b138d721d4f78c284bde4a63cd6bd2887701c9e7a031e1f38f97
-  linux_386: sha256:ed03336311fa62473cb3d8e95e4995734d53a290557104f86a6a2f0d86ea9cc7
-  linux_amd64: sha256:b6e126a63a4a2bbe82f9d6bdd48ae879c4f4ffa256b2e1f9567887c321929641
-  linux_arm: sha256:d30b2651a8b7b2acc9d954717a0a00c2951cedc4e982e53d2f8a1d857f57170c
-  linux_arm64: sha256:e66a097e96edfa67635e65fdd75307fe8a870b985d31594cd885a62e2c10fb81
-  openbsd_386: sha256:172e7cbe0dc48811913deaa00a99f8a701bf25564af0707c544d90789e638fb0
-  openbsd_amd64: sha256:ac3f5afba667e7527d1d0dc491bbc2ad02c580ad71092e054590b826db5aab81
-  windows_386: sha256:ce2ebd0fe989c2899fb2cc57f8e2f9d01fd03b29684a8d9aad7a5800ad5d679a
-  windows_amd64: sha256:311b0414ca03bd98bad4cd58b070fece08f16be75cd0ddc8f12fedfe21626afc
+  darwin_386: sha256:0ea4f65520a4d9f792139f192e62f5c8453173e5b445f6816e9c9b8c5ae4ac47
+  darwin_amd64: sha256:6718b047024083d8ce0ca70535c9fbea0e5f371557e72873fafdfe0a4a2b838a
+  freebsd_386: sha256:c34be88339dc55bc57cbbd08de624604e8af3336319937fbb7d0d7e59a02840a
+  freebsd_amd64: sha256:5aa48ab129ccb48c25ede99679a55b11378c7be2c9a3c27948133905a49673c4
+  freebsd_arm: sha256:b736b83cb2615663ad709e542251e2ebe078e4ff22ffae144b5df777b3fab1cb
+  linux_386: sha256:0bd45d1e6df2198eec62daaf78f78c0165a00fdfcd38d9a3bd9353ee853b14bb
+  linux_amd64: sha256:13774108d10e26b1b26cc5a0a28e26c934b4e2c66bc3e6c33ea04c2f248aad7f
+  linux_arm: sha256:009fb014409d50eb6ed55858b53fea1757cb6f728eb34b047f90933401c52da0
+  linux_arm64: sha256:14601504ae4e94b29d759fb8dca57864a229d949f664e1117a43fc5863f182ee
+  openbsd_386: sha256:01b578c817b67fcf376e236b2b815efaeef71743e2ff8eabe678813cd4d33fe9
+  openbsd_amd64: sha256:60d164ebcbab454c543cd57cb40e6537822e067760974057af79721e8900033a
+  windows_386: sha256:a31a4421dee6ea7ce19592c3d2faf4e1511c0530af26668d3980b076c0453a63
+  windows_amd64: sha256:32db9260a98a42b42d4591ea48c8be04fb6f77fd04fe4fa1a832b93d81ec123c
 
 packer_install_parent_dir: /usr/local/bin
