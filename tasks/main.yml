@@ -20,7 +20,7 @@
   become: yes
   become_user: root
   unarchive:
-    remote_src: no
+    remote_src: yes
     src: /tmp/{{packer_zip}}
     dest: '{{packer_install_dir}}'
     creates: '{{packer_install_dir}}/packer'
