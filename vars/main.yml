@@ -2,5 +2,5 @@
 packer_name: 'packer_{{packer_ver}}_{{packer_platform}}'
 packer_zip : '{{packer_name}}.zip'
 packer_url : '{{packer_mirror}}/{{packer_ver}}/{{packer_zip}}'
-packer_checksum: '{{packer_checksums[packer_platform]}}'
+packer_checksum: '{{packer_checksums[packer_ver][packer_platform]}}'
 packer_install_dir: '{{packer_install_parent_dir}}/{{packer_name}}'
