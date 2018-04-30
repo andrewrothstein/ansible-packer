@@ -1,9 +1,23 @@
 ---
-packer_ver : '1.2.2'
+packer_ver : '1.2.3'
 packer_mirror : https://releases.hashicorp.com/packer
 packer_platform : linux_amd64
 
 packer_checksums:
+  # https://releases.hashicorp.com/packer/1.2.3/packer_1.2.3_SHA256SUMS
+  '1.2.3':
+    darwin_386: sha256:a5a1bc89871cd054943e33c94415fb93d4e04c730f4cf2579e37f165c87545db
+    darwin_amd64: sha256:3c49a7d94c6c632d4c6c762328e12398e7132d5261f6cd3bca785c99d3fe512b
+    freebsd_386: sha256:2961c4d834e6076c0c2f80054f48c880cda03dec890678d5d886f2ceb63d1244
+    freebsd_amd64: sha256:e47f14f04c5bf215876a747ec97147c5e2f97e117960e62d4b5b061dae5752db
+    freebsd_arm: sha256:d7684ead22d1dd5b8c8bcd4e9c3548570f8df459e213f46a9e940b06dd39797c
+    linux_386: sha256:848034199b50b1d5b0dda24681f063e12b99b3c17dbb078f2ddd93b492ba4745
+    linux_amd64: sha256:822fe76c2dfe699f187ef8c44537d10453a1545db620e40b345cf6991a690f7d
+    linux_arm: sha256:bbc797a9e429e4ec30e03a389e6ebd54197657d6cc32b0f8434aac91cc2f316c
+    openbsd_386: sha256:09914cae41fd46991b3282b574b9c7e053b4f78e62a37744322e51c9b3233ab1
+    openbsd_amd64: sha256:cfd1bd1d9639fef849276eb6d8b3ef70ac03d49c6efe1d0b7d4da98e1dd1dd49
+    windows_386: sha256:0ac9f62e6bbebaeb848ab0f270928ef6045a1132fda1867072be05206eba5b44
+    windows_amd64: sha256:c28c4d0710526a9029a9eb4ecc7ab967c267b5be1020680667484f4fe016bd99
   # https://releases.hashicorp.com/packer/1.2.2/packer_1.2.2_SHA256SUMS
   '1.2.2':
     darwin_386: sha256:e9087386f1e6d26195d787e9f2cdebaff1726c773541a30597183450132e892b
