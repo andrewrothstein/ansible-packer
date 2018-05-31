@@ -1,9 +1,16 @@
 ---
-packer_ver : '1.2.3'
+packer_ver : '1.2.4'
 packer_mirror : https://releases.hashicorp.com/packer
 packer_platform : linux_amd64
 
 packer_checksums:
+  # https://releases.hashicorp.com/packer/1.2.4/packer_1.2.4_SHA256SUMS
+  '1.2.4':
+    darwin_amd64: sha256:b3da0ed1bef5b1dc67cf358c3f465ef0b053a7cbe4f3a6459ea1bbd2fe084b7b
+    freebsd_amd64: sha256:a2f337703d9e2272c707657ffb156be06415812f408f3317a18b06f7e9ad2f5e
+    linux_amd64: sha256:258d1baa23498932baede9b40f2eca4ac363b86b32487b36f48f5102630e9fbb
+    openbsd_amd64: sha256:a082970c1f2017055b6eae9ac446e98d591845d7b129b5de9ec85faecd97e146
+    windows_amd64: sha256:97c030add9c3d772f445df7bae3f0e70c4b67d4ed13c39e02b4cc338d8c93016
   # https://releases.hashicorp.com/packer/1.2.3/packer_1.2.3_SHA256SUMS
   '1.2.3':
     darwin_386: sha256:a5a1bc89871cd054943e33c94415fb93d4e04c730f4cf2579e37f165c87545db
