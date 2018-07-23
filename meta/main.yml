@@ -27,5 +27,5 @@ galaxy_info:
     - packaging
 
 dependencies:
-  - src: andrewrothstein.unarchive-deps
+  - role: andrewrothstein.unarchive-deps
     version: v1.0.9
