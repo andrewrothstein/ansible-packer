@@ -1,5 +1,5 @@
 ---
-packer_ver: '1.3.1'
+packer_ver: '1.3.2'
 packer_mirror: https://releases.hashicorp.com/packer
 packer_platform: linux_amd64
 
@@ -136,5 +136,22 @@ packer_checksums:
     solaris_amd64: sha256:b02e021ff1e5014fdebb5259456d7f06eceb99e1279c2091a54ea95d036df6ef
     windows_386: sha256:78cd06b124ca04d14f77eebbd7be81af3edd29e4bf7712a2302cb3bb7b0a1eb7
     windows_amd64: sha256:1a47f37d25949627a5b32a059943bafac19c8ef1a1bb8ae4182d0921236af9e1
+  # https://releases.hashicorp.com/packer/1.3.2/packer_1.3.2_SHA256SUMS
+  '1.3.2':
+    darwin_386: sha256:0023ccac8f332dca2082ecd11e1037bf14c95c66e8eaeabf8454d2ded8e12784
+    darwin_amd64: sha256:1c2433239d801b017def8e66bbff4be3e7700b70248261b0abff2cd9c980bf5b
+    freebsd_386: sha256:b26ffeb216c3f79fdb3d93ae479cd443743f50c8f23a509fd0beba5a77d611db
+    freebsd_amd64: sha256:b4cf91504cf320e0c3e7df209d6e43b862374a18310828067315306df5bb5ea9
+    freebsd_arm: sha256:95d31c4568756e388981c3e9c93263b7293a3f9e0db5f15071d6b43d9db728df
+    linux_386: sha256:136747816af8d4643afd54a1e6c15480cdde9ea16c8ebf32aee0e48cd7919656
+    linux_amd64: sha256:5e51808299135fee7a2e664b09f401b5712b5ef18bd4bad5bc50f4dcd8b149a1
+    linux_arm: sha256:1ec7416ebf6170c34b4005363eaed5ae8611b7816f0806c36ed17602b0661622
+    linux_arm64: sha256:988a7d3662083930c1015dff7aee1185de8c51ec61ac254efd5b8b46d232aba3
+    linux_ppc64le: sha256:f3a2aec3a0a54d5d9cc6047f52acb73202b30efea770d4627459ca5608e58ac1
+    openbsd_386: sha256:efeb9e2599e1f93d63355ef221a5f29a70589fd43185ae26b244fbc2a5a261a0
+    openbsd_amd64: sha256:719d4dc120730acda68fa0fd2ef74c3da10b748a18b95a9eb264a2338b57b7a8
+    solaris_amd64: sha256:afd90a731e63ec45a5bbc0c2cc0ce7b740d9568fc7fd9370f8f300b967ad1097
+    windows_386: sha256:99a16064e60776922ae9cb1bef9e9ec8311511f735b1332a811817d3f93171f2
+    windows_amd64: sha256:b0fa064bc29820f330669b3bc790e61eb1c8a873ae8d5134e580b3b16ef50e60
 
 packer_install_parent_dir: /usr/local/bin
