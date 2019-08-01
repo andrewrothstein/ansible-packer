@@ -1,5 +1,5 @@
 ---
-packer_ver: '1.4.0'
+packer_ver: '1.4.2'
 packer_mirror: https://releases.hashicorp.com/packer
 packer_platform: linux_amd64
 
@@ -198,5 +198,26 @@ packer_checksums:
     openbsd_amd64: sha256:76d8a213483741db892b5e6c6290350c4283dfae4d29006bcce0cb264471a058
     windows_386: sha256:58fb669558f014c6b5f9c348631d72c3f8c303bd52fa07a8d8612bc45f3e1f30
     windows_amd64: sha256:30166a017473c2ad840e294733a7eb9a9326e82ce304d320e91adb636a95dcb0
+  # https://releases.hashicorp.com/packer/1.4.2/packer_1.4.2_SHA256SUMS
+  '1.4.2':
+    darwin_386: sha256:7f7e134c268e68de3f426deb17fdb2baa8d75bfd0a055fa754cde35195d4dec7
+    darwin_amd64: sha256:4e9bf72be16b00953dd7213e19fba97de569b91d8b8116b190efd647efe7d047
+    freebsd_386: sha256:0977e5237a2c64575860142c23daadfd906b78f887a979d2a881550f7cff2f56
+    freebsd_amd64: sha256:63617c9de21f2b393edfbb875c82702335cb53449e68ad4171826b68054c967c
+    freebsd_arm: sha256:cc1ce3869872c8022751985c3d91c1f7780224de87404fe0cc1c76dab2c5d99c
+    linux_386: sha256:30e26eb19cef96bc759df42e4fb2a15399b45a121af900c589e110953a607197
+    linux_amd64: sha256:2fcbd1662ac76dc4dec381bdc7b5e6316d5b9d48e0774a32fe6ef9ec19f47213
+    linux_arm: sha256:b883a6f0da25ce9aef2ed722bf32cf94fcdaf35f8652093b866c9b40efc38fbe
+    linux_arm64: sha256:58d6b853186f9cd8d55f07b88f65d01e12926cc4c46d270bef2f5c1da3da5cd7
+    linux_mips: sha256:55f919f27471960da70dc0f83f419cf490ea7704dc521652cf4e1947cc1d2dd0
+    linux_mips64: sha256:7f49b0178f997e5b0f41f133db8ab3fd05ab425f48bedbed26b726db35fe75eb
+    linux_mipsle: sha256:e2c1e16879dc03b602d067761d48a4de5378499495481f66ca4d93d7a7805a38
+    linux_ppc64le: sha256:01e66485ace04c4404017a8646f785440418b0ec935a4873bfef39b8aefc7074
+    linux_s390x: sha256:02000defc62f0c4eeee1d11dfe6f5f4eea47f96dd7ba6d25ae72fd9038b06836
+    openbsd_386: sha256:d1975d4fddd2eebfbeedf57af47cb3a97464c8b204988d11194b86c84ea65a52
+    openbsd_amd64: sha256:6ffbe317443cc335be56df6ee87f58d4616cebacc8795542d6ce0b0b66c7a6f3
+    solaris_amd64: sha256:0aa5b593f9021a81aae8b53f90c346d68fc40e6fdf6e50ce702b2a67a2a80bbd
+    windows_386: sha256:dfd8c17a1ad6a1c5cbeb9f9bee220fd45ff3c877186ec1e571f5a3ed646f5284
+    windows_amd64: sha256:0db7527e81672d51fc436081eff0e49e8873baee0564e427c5dc73a3f44fa840
 
 packer_install_parent_dir: /usr/local/bin
