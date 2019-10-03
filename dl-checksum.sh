@@ -1,6 +1,6 @@
 #!/usr/bin/env sh
 APP=packer
-VER=1.4.3
+VER=1.4.4
 DIR=~/Downloads
 MIRROR=https://releases.hashicorp.com/${APP}/${VER}
 
@@ -16,14 +16,14 @@ fi
 
 dl()
 {
-    OS=$1
-    ARCH=$2
-    PLATFORM=${OS}_${ARCH}
-    FILE=${APP}_${VER}_${PLATFORM}.zip
-    URL=$MIRROR/$FILE
+    local os=$1
+    local arch=$2
+    local platform=${os}_${arch}
+    local file=${APP}_${VER}_${platform}.zip
+    local url=$MIRROR/$file
 
-    printf "    # %s\n" $URL
-    printf "    %s: sha256:%s\n" $PLATFORM `fgrep $FILE $LCHECKSUMS | awk '{print $1}'`
+    printf "    # %s\n" $url
+    printf "    %s: sha256:%s\n" $platform `grep $file $LCHECKSUMS | awk '{print $1}'`
 }
 
 printf "  # %s\n" $RCHECKSUMS
@@ -32,7 +32,6 @@ dl darwin 386
 dl darwin amd64
 dl freebsd 386
 dl freebsd amd64
-dl freebsd arm
 dl linux 386
 dl linux amd64
 dl linux arm
