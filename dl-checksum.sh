@@ -38,6 +38,7 @@ dl linux arm
 dl linux arm64
 dl linux mips
 dl linux mips64
+dl linux mipsle
 dl linux ppc64le
 dl linux s390x
 dl openbsd 386

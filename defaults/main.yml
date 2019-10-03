@@ -282,6 +282,8 @@ packer_checksums:
     linux_mips: sha256:f8fb352c9a036617f2250c9bdb60ac29cecaafcd64da4c65b4805883e26f8f2b
     # https://releases.hashicorp.com/packer/1.4.4/packer_1.4.4_linux_mips64.zip
     linux_mips64: sha256:1c946178edd341bb4765dee76e60164c33d0251ef80331e8a754da6965b78cc9
+    # https://releases.hashicorp.com/packer/1.4.4/packer_1.4.4_linux_mipsle.zip
+    linux_mipsle: sha256:83956733c86717acf0ccb65cf64ea8b338e0c13395314a7615339047125eae13
     # https://releases.hashicorp.com/packer/1.4.4/packer_1.4.4_linux_ppc64le.zip
     linux_ppc64le: sha256:88810d5f07db78e87c062325abf6ef332cc7025d02dcbac54eaecff31962be4c
     # https://releases.hashicorp.com/packer/1.4.4/packer_1.4.4_linux_s390x.zip
