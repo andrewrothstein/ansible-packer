@@ -1,6 +1,6 @@
 #!/usr/bin/env sh
 APP=packer
-VER=1.4.4
+VER=${1:-1.4.5}
 DIR=~/Downloads
 MIRROR=https://releases.hashicorp.com/${APP}/${VER}
 
