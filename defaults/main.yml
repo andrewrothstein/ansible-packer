@@ -4,7 +4,7 @@ packer_mirror: https://releases.hashicorp.com/packer
 packer_os: linux
 packer_arch: amd64
 
-packer_install_parent_dir: /usr/local/bin
+packer_install_parent_dir: /usr/local
 
 packer_checksums:
   # https://releases.hashicorp.com/packer/1.2.5/packer_1.2.5_SHA256SUMS

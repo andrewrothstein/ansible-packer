@@ -42,10 +42,18 @@
         path: /tmp/{{ packer_zip }}
         state: absent
 
-- name: linking...
+- name: linking install directory...
   become: yes
   become_user: root
   file:
-    src: '{{ packer_install_dir }}/packer'
-    dest: '{{ packer_install_parent_dir }}/packer'
+    src: '{{ packer_install_dir }}'
+    dest: '{{ packer_link_dir }}'
+    state: link
+
+- name: linking packer executable...
+  become: yes
+  become_user: root
+  file:
+    src: '{{ packer_link_dir }}/packer'
+    dest: '{{ packer_install_parent_dir }}/bin/packer'
     state: link
