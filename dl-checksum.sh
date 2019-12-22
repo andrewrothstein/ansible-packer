@@ -13,8 +13,8 @@ dl()
     local file=${APP}_${ver}_${platform}.zip
     local url=$MIRROR/$ver/$file
 
-    printf "        # %s\n" $url
-    printf "        %s: sha256:%s\n" $platform `fgrep $file $lchecksums | awk '{print $1}'`
+    printf "    # %s\n" $url
+    printf "    %s: sha256:%s\n" $platform `fgrep $file $lchecksums | awk '{print $1}'`
 }
 
 dl_all () {
@@ -28,8 +28,8 @@ dl_all () {
         wget -q -O $lchecksums $rchecksums
     fi
 
-    printf "      # %s\n" $rchecksums
-    printf "      '%s':\n" $ver
+    printf "  # %s\n" $rchecksums
+    printf "  '%s':\n" $ver
     dl $ver $lchecksums darwin 386
     dl $ver $lchecksums darwin amd64
     dl $ver $lchecksums freebsd 386
@@ -45,4 +45,4 @@ dl_all () {
     dl $ver $lchecksums windows amd64
 }
 
-dl_all 1.4.5
+dl_all ${1:-1.5.1}
