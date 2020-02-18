@@ -1,5 +1,5 @@
 ---
-packer_ver: '1.5.1'
+packer_ver: '1.5.4'
 packer_mirror: https://releases.hashicorp.com/packer
 packer_os: linux
 packer_arch: amd64
@@ -392,3 +392,31 @@ packer_checksums:
     windows_386: sha256:9a11a0124c2091ad1117312385fb1f85d25a53ef0ef1a059a80c0d2aca0b75da
     # https://releases.hashicorp.com/packer/1.5.1/packer_1.5.1_windows_amd64.zip
     windows_amd64: sha256:0a4ec81d5989a37126359bdd6774b08065a195ae43943530c3437556e8589c7c
+  # https://releases.hashicorp.com/packer/1.5.4/packer_1.5.4_SHA256SUMS
+  '1.5.4':
+    # https://releases.hashicorp.com/packer/1.5.4/packer_1.5.4_darwin_386.zip
+    darwin_386: sha256:1f7716098fefaba2e49732ff7a7b70524e1fb46686ef3a315e2803513e47c428
+    # https://releases.hashicorp.com/packer/1.5.4/packer_1.5.4_darwin_amd64.zip
+    darwin_amd64: sha256:dab5ab9d4801da5206755856bc3f026942ce18391419202a1b0b442c1c2e591d
+    # https://releases.hashicorp.com/packer/1.5.4/packer_1.5.4_freebsd_386.zip
+    freebsd_386: sha256:afeeeea483f099256a34dede01668dfdf36facf79b7d4bdf61a7e1198f22db9a
+    # https://releases.hashicorp.com/packer/1.5.4/packer_1.5.4_freebsd_amd64.zip
+    freebsd_amd64: sha256:6412d2257ed50477c6bb53d75efbbcfa01471aba60f47a74b513c087834c43ed
+    # https://releases.hashicorp.com/packer/1.5.4/packer_1.5.4_linux_386.zip
+    linux_386: sha256:3158100c2ef1c3c6907b8d0ec35fe1011626a73ab48ded8aee1a3b0e938bb762
+    # https://releases.hashicorp.com/packer/1.5.4/packer_1.5.4_linux_amd64.zip
+    linux_amd64: sha256:c7277f64d217c7d9ccfd936373fe352ea935454837363293f8668f9e42d8d99d
+    # https://releases.hashicorp.com/packer/1.5.4/packer_1.5.4_linux_arm.zip
+    linux_arm: sha256:8f2703b8ad032acbc5760c6c0f9485407c792a78f7686d7218812e020ea017ab
+    # https://releases.hashicorp.com/packer/1.5.4/packer_1.5.4_linux_arm64.zip
+    linux_arm64: sha256:674fba8956196fffe602cf5616cb870e28bc1b3277ff97ed56cf3235bf842c04
+    # https://releases.hashicorp.com/packer/1.5.4/packer_1.5.4_openbsd_386.zip
+    openbsd_386: sha256:7874a78b080f6444b264dbea74e80f42914eb8435f07c77ac8f1679d5b01969a
+    # https://releases.hashicorp.com/packer/1.5.4/packer_1.5.4_openbsd_amd64.zip
+    openbsd_amd64: sha256:03fed7fc8e1e232d7ddfa618428f467f9c7a96b865297fe771333f042d961d63
+    # https://releases.hashicorp.com/packer/1.5.4/packer_1.5.4_solaris_amd64.zip
+    solaris_amd64: sha256:a0969518ccd3461311c261bdeeb9927dba1ced7ae3ce589ba892e6871b86c5fb
+    # https://releases.hashicorp.com/packer/1.5.4/packer_1.5.4_windows_386.zip
+    windows_386: sha256:ecdbfed1c0ac7abb61f4317a231233aae466577fe18bf4343810c779747b039a
+    # https://releases.hashicorp.com/packer/1.5.4/packer_1.5.4_windows_amd64.zip
+    windows_amd64: sha256:26a66d6c99420b320babda2c94bfe1b289298b334d7721efd9f1a61139955d82
