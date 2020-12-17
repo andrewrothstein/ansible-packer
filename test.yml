@@ -1,5 +1,10 @@
 ---
 - hosts: all
   roles:
-    - role: '{{playbook_dir}}'
-      packer_cleanup: True
+    - role: '{{ playbook_dir }}'
+  tasks:
+    - command: /usr/local/bin/packer --version
+      register: packer_test_output
+    - name: packer --version
+      debug:
+        msg: '{{ packer_test_output.stdout }}'
