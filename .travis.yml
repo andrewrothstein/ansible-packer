@@ -20,6 +20,7 @@ env:
 - OS=ubi8_8.1
 - OS=ubi8_8.2
 - OS=ubuntu_bionic
+- OS=ubuntu_focal
 - OS=ubuntu_xenial
 language: python
 python: '3.7'
