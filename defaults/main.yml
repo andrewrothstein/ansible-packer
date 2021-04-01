@@ -1,5 +1,5 @@
 ---
-packer_ver: 1.7.0
+packer_ver: 1.7.1
 packer_mirror: https://releases.hashicorp.com/packer
 packer_os: linux
 packer_arch: amd64
@@ -690,3 +690,29 @@ packer_checksums:
     windows_386: sha256:62ebdb5059b0cc46297cd3f5cae7875d2b45cb3e44b032b03c317c81bed98719
     # https://releases.hashicorp.com/packer/1.7.0/packer_1.7.0_windows_amd64.zip
     windows_amd64: sha256:c7546b79ed8ea73a1541e5d084311a230f7233023df9b11659e1d12e7f63224b
+  # https://releases.hashicorp.com/packer/1.7.1/packer_1.7.1_SHA256SUMS
+  '1.7.1':
+    # https://releases.hashicorp.com/packer/1.7.1/packer_1.7.1_darwin_amd64.zip
+    darwin_amd64: sha256:df4fce2ee7bfc7dbb636d9dc6c7fa1c998e3a526dd6c804998e86a2ee30c800f
+    # https://releases.hashicorp.com/packer/1.7.1/packer_1.7.1_freebsd_386.zip
+    freebsd_386: sha256:f8f876b7832caebaa11a864f590d994e1d3bcee672845c8037ecbc0b8321b8d9
+    # https://releases.hashicorp.com/packer/1.7.1/packer_1.7.1_freebsd_amd64.zip
+    freebsd_amd64: sha256:7064b7e15df1e72935c44279b2261fb31f9067e91980b183cb6d12445fd8f937
+    # https://releases.hashicorp.com/packer/1.7.1/packer_1.7.1_linux_386.zip
+    linux_386: sha256:c7ee0c4cd9515187b9aa9321adc05bbf1fdc91989718810cf1e362187e99248a
+    # https://releases.hashicorp.com/packer/1.7.1/packer_1.7.1_linux_amd64.zip
+    linux_amd64: sha256:1afd50d8cd30290d569e07548fecfb4fe8c95994740acbc3a5b2c2246268a026
+    # https://releases.hashicorp.com/packer/1.7.1/packer_1.7.1_linux_arm.zip
+    linux_arm: sha256:a92a3c28e1bbc573b6dc0c09a25fa48514c5d7d3c910048a99d4e84905bcd88d
+    # https://releases.hashicorp.com/packer/1.7.1/packer_1.7.1_linux_arm64.zip
+    linux_arm64: sha256:356edb9f326a9c44a57858d36fa60881fbef109ef52028634e92b73f2464c210
+    # https://releases.hashicorp.com/packer/1.7.1/packer_1.7.1_openbsd_386.zip
+    openbsd_386: sha256:c32f34c796c01f72e1511d46d0c8830ec9c82d6de74f34e27a49ea9cfdca2c0f
+    # https://releases.hashicorp.com/packer/1.7.1/packer_1.7.1_openbsd_amd64.zip
+    openbsd_amd64: sha256:955543929010e5654b9c5d08534dd6a7e338241f4d7bbc2221ef54aa50284597
+    # https://releases.hashicorp.com/packer/1.7.1/packer_1.7.1_solaris_amd64.zip
+    solaris_amd64: sha256:fe1a7a262050739883931d30432c36931c9676d2420674ddac2cc0f7485a3b27
+    # https://releases.hashicorp.com/packer/1.7.1/packer_1.7.1_windows_386.zip
+    windows_386: sha256:3609c03e412907d4e145a75c7f31b9c818be8e645d81d727cc64c1d3fe10275e
+    # https://releases.hashicorp.com/packer/1.7.1/packer_1.7.1_windows_amd64.zip
+    windows_amd64: sha256:f97b4573482c201894e554a1b5632b419228c74aaf40ec254070c6990cac8d90
