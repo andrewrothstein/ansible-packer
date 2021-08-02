@@ -1,6 +1,6 @@
 andrewrothstein.packer
 ======================
-[![Build Status](https://travis-ci.org/andrewrothstein/ansible-packer.svg?branch=master)](https://travis-ci.org/andrewrothstein/ansible-packer)
+![Build Status](https://github.com/andrewrothstein/ansible-packer/actions/workflows/build.yml/badge.svg)
 
 Installs [Packer](https://www.packer.io/)
 
