@@ -1,6 +1,6 @@
 ---
 - name: check for installation in {{ packer_install_dir }}
-  become: yes
+  become: true
   become_user: root
   stat:
     path: '{{ packer_install_dir }}'
@@ -10,7 +10,7 @@
 - when: not packer_binary_dir.stat.exists
   block:
     - name: downloading {{ packer_url }} to {{ packer_tmp_zip }}
-      become: yes
+      become: true
       become_user: root
       get_url:
         url: '{{ packer_url }}'
@@ -19,7 +19,7 @@
         mode: 0644
 
     - name: mkdir {{ packer_install_dir }}
-      become: yes
+      become: true
       become_user: root
       file:
         path: '{{ packer_install_dir }}'
@@ -27,23 +27,23 @@
         state: directory
 
     - name: unarchive {{ packer_tmp_zip }} to {{ packer_install_dir }}
-      become: yes
+      become: true
       become_user: root
       unarchive:
-        remote_src: yes
+        remote_src: true
         src: '{{ packer_tmp_zip }}'
         dest: '{{ packer_install_dir }}'
         creates: '{{ packer_install_dir }}/packer'
   always:
     - name: rm {{ packer_tmp_zip }}
-      become: yes
+      become: true
       become_user: root
       file:
         path: '{{ packer_tmp_zip }}'
         state: absent
 
 - name: linking {{ packer_link_exe }} to {{ packer_install_exe }}
-  become: yes
+  become: true
   become_user: root
   file:
     src: '{{ packer_install_exe }}'
