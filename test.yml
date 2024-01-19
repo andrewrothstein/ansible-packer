@@ -1,10 +1,14 @@
 ---
-- hosts: all
-  roles:
-    - role: '{{ playbook_dir }}'
+- name: Testing andrewrothstein.packer
+  hosts: all
   tasks:
-    - command: /usr/local/bin/packer --version
+    - name: Installing andrewrothstein.packer
+      ansible.builtin.include_role:
+        name: '{{ playbook_dir }}'
+    - name: Executing 'packer --version'
+      ansible.builtin.command: /usr/local/bin/packer --version
+      changed_when: false
       register: packer_test_output
-    - name: packer --version
-      debug:
+    - name: Output of 'packer --version'
+      ansible.builtin.debug:
         msg: '{{ packer_test_output.stdout }}'
